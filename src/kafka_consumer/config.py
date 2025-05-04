@@ -23,7 +23,6 @@ class KafkaSSLConfig:
     KAFKA_CLIENT_ID = os.getenv("KAFKA_CLIENT_ID")
     
     # SSL Paths (adjust based on your cert locations)
-    SSL_CAFILE = PROJECT_ROOT / "ssl-certificates" / "ca-cert.pem" #str(Path(__file__).parent.parent / "certs" / "ca-cert.pem")
+    SSL_CAFILE = PROJECT_ROOT / "ssl-certificates" / "ca-cert.pem"
     SSL_CERTFILE = PROJECT_ROOT / "ssl-certificates" / "client-cert.pem"
     SSL_KEYFILE = PROJECT_ROOT / "ssl-certificates" / "client-key.pem"
-    # SSL_PASSWORD = os.getenv("KAFKA_SSL_PASSWORD")  # Optional key password
