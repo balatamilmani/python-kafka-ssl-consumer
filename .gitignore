@@ -1,0 +1,28 @@
+# Virtual environment
+.venv/
+
+# SSL certificates (sensitive)
+ssl-certificates/*.pem
+
+# Environment variables
+.env
+
+# Python build/install artifacts
+build/
+dist/
+**/*.egg-info/
+
+# IDE/config files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python cache/compiled
+__pycache__/
+*.py[cod]
+
+# Logs and local data
+logs/
+*.log
+data/
