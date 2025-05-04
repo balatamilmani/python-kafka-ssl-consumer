@@ -1,4 +1,4 @@
-from confluent_kafka import Consumer, KafkaException, KafkaError
+from confluent_kafka import Consumer, KafkaError
 from .config import KafkaSSLConfig
 import sys
 import ssl
@@ -7,6 +7,7 @@ def create_ssl_consumer():
     conf = {
         "bootstrap.servers": KafkaSSLConfig.KAFKA_BROKER,
         "group.id": KafkaSSLConfig.GROUP_ID,
+        'client.id': KafkaSSLConfig.KAFKA_CLIENT_ID,
         "auto.offset.reset": "earliest",
         "security.protocol": "ssl",
         "ssl.ca.location": KafkaSSLConfig.SSL_CAFILE,
