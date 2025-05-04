@@ -55,6 +55,3 @@ This is a sample code in `Python` to build a Kafka consumer application that use
 
 ### 7. Running the Consumer
     python -m src.kafka_consumer.consumer
-### Verify installation
-    `pip list | grep kafka-consumer`  # Linux/macOS
-
